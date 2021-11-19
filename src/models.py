@@ -25,6 +25,7 @@ class Address(Base):
     post_code = Column(String(250), nullable=False)
     person_id = Column(Integer, ForeignKey('person.id'))
     person = relationship(Person)
+    #nada
 
     def to_dict(self):
         return {}
